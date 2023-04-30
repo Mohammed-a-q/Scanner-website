@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Online Scanners store" />
+    <meta name="keywords" content="scanners, offices, store" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Purchase</title>
+</head>
+<body>
+    <!--start header-->
+    <div class="header">
+        <div class="container">
+            
+            <!--start navbar-->
+            <div class="navbar">
+                <div class="logo">
+                    <h3>scanX</h3>
+                </div>
+                <ul>
+                    <li class="">
+                        <span class="fa-solid fa-house"></span>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <span class="fa-solid fa-shop"></span>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li class="active">
+                        <span class="fa-solid fa-cart-shopping"></span>
+                        <a href="purchase.html">Purchase</a>
+                    </li>
+                    <li>
+                        <span class="fa-solid fa-message"></span>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+            <!--end of navbar-->
+
+        </div>
+    </div>
+    <!--end of header-->
+
+    <!--start purchase-->
+    <div class="purchase section">
+        <div class="container">
+            <div class="purcahse-container">
+                <h2>Please fill your order information</h2>
+                <form action="" class="purchase-form" onsubmit="return purchaseValidate();">
+                    <div id="errors-box" class="pur-errors">
+
+                    </div>
+                    <div class="info-box">
+                        <div class="first-name">
+                            <h3>First Name</h3>
+                            <input type="text" onkeyup="nameValidate()" class="name-input p-input f-input input" placeholder="Enter your first name"/>
+
+                        </div>
+                        <div class="last-name">
+                            <h3>Last Name</h3>
+                            <input type="text" onkeyup="nameValidate()" class="name-input p-input input" placeholder="Enter your last name"/>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="email">
+                            <h3>Email address</h3>
+                            <input type="email" class="p-email p-input f-input input" placeholder="Enter your email"/>
+                        </div>
+                        <div class="phone">
+                            <h3>Phone number</h3>
+                            <input type="text" class="p-phone p-input f-input input" placeholder="Enter your phone number"/>
+                        </div>
+
+                    </div>
+    
+
+                    <div class="info-box">
+                        <div class="country">
+                            <h3>Country</h3>
+                            <select>
+                                <option>Saudi Arabia</option>
+                                <option>United Arab Emirates</option>
+                                <option>Egypt</option>
+                                <option>Yemen</option>
+                                <option>Oman</option>
+                                <option>Morocco</option>
+                                <option>Algeria</option>
+                                <option>Tunisia</option>
+                                <option>Qatar</option>
+                                <option>Sudan</option>
+                                <option>Palestine</option>
+                                <option>Jordan</option>
+                                <option>Syria</option>
+                                <option>Kuwait</option>
+                                <option>Lebanon</option>
+                                <option>Bahrain</option>
+                                <option>Libya</option>
+                                <option>Iraq</option>
+                            </select>
+                        </div>
+                        <div class="city">
+                            <h3>City</h3>
+                            <input type="text" class="p-city p-input input" placeholder="Enter your city"/>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="street">
+                            <h3>Address</h3>
+                            <input type="text" class="p-address p-input input" placeholder="Enter your street adderss"/>
+                        </div>
+                        <div class="zip-code">
+                            <h3>ZIP code</h3>
+                            <input type="text" class="p-zip p-input input" placeholder="Enter zip code"/>
+                        </div>
+                    </div>
+                    
+                    <span>
+                        <div class="info-box location-box">
+                            <div class="location">
+                                <h3>Location</h3>
+                                <p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237685.0692944663!2d39.986632944653515!3d21.435957142780794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x98ab2469cf70c9ce!2z2YXZg9ipINin2YTZhdmD2LHZhdip!5e0!3m2!1sar!2ssa!4v1675447652053!5m2!1sar!2ssa"></iframe>
+                                </p>
+    
+                            </div>
+                        </div>
+    
+                        <div class="info-box payment">
+                            <div class="order">
+                                <h3>Product</h3>
+                                <select>
+                                    <option selected="selected">
+                                        <h6>Image formula DR-M160II</h6>
+                                    </option>
+                                    <option>
+                                        <h6>I-sensys X 1643P</h6>
+                                    </option>
+                                    <option>
+                                        <h6>Canon MAXIFY iB4140</h6>
+                                    </option>
+    
+                                    <option>
+                                        <h6>i-SENSYS MF445dw</h6>
+                                    </option>
+                                    <option>
+                                        <h6>i-SENSYS LBP623Cdw</h6>
+                                    </option>
+                                    <option>
+                                        <h6>Image Formula DR-C225 II</h6>
+                                    </option>
+    
+                                    <option>
+                                        <h6>ImageFORMULA P-208II</h6>
+                                    </option>
+                                    <option>
+                                        <h6>ImageFORMULA P-215II</h6>
+                                    </option>
+                                    <option>
+                                        <h6>ImageFORMULA DR-G2090</h6>
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="methods">
+                                <h3>Payment method</h3>
+                                <label>
+                                    <p>Paypal</p>
+                                    <input checked type="radio" name="payment">
+                                </label>
+                                <label>
+                                    <p>Appel pay</p>
+                                    <input type="radio" name="payment">
+                                </label>
+                                <label>
+                                    <p>Cash</p>
+                                    <input type="radio" name="payment">
+                                </label>
+                                <label>
+                                    <p>Master card</p>
+                                    <input type="radio" name="payment">
+                                </label>
+                            </div>
+                            <div class="privacy">
+                                <h3>Privacy & Policy</h3>
+                                <div>
+                                    <p>Agreed to our <a href="#">privacy & policy</a> </p>
+                                    <input type="checkbox" checked="checked">
+                                </div>
+    
+                            </div>
+                            <div class="send">
+                                <input type="submit" value="Purchase">
+                            </div>
+                        </div>
+                    </span>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--end of purchase-->
+
+    <!--start footer-->
+    <div class="footer section no-margin-footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="logo">
+                    <h2>scanX</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="purchase.html" class="active">Purchase</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <span class="fa-brands fa-twitter"></span>
+                    <span class="fa-brands fa-facebook-f"></span>
+                    <span class="fa-brands fa-instagram"></span>
+                    <span class="fa-brands fa-whatsapp"></span>
+                </div>
+                <div class="authors">
+                    <h5>Made by: Hammad Ali & Mohammad Adnan</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of footer-->
+    <script src="scripts/script.js"></script>
+</body>
+</html>

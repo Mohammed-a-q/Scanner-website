@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Scanners online store" />
+    <meta name="keywords" content="scanners, offices, store" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <!--start popup-->
+    <div id="popup">
+        <div class="popup-container">
+            
+            <form id="login-form" onsubmit="return loginValidate();">
+                <div class="close-box">
+                    <a href="" onclick="hidePopUp()" id="close"><span class="fa-solid fa-xmark"></span></a>
+                </div>
+                <!--start errors-->
+                <div id="errors-box">
+                    
+                </div>
+                <!--end of errors-->
+                <div class="name-input inputs">
+                    <span class="fa-solid fa-user"></span>
+                    <input class="f-input input" type="text" id="username" name="username" placeholder="Enter your username">
+                </div>
+                <div class="pass-input inputs">
+                    <span class="fa-solid fa-key"></span>
+                    <input type="password" class="input" id="password" name="password" placeholder="Enter your password">
+                </div>
+                <div class="remember inputs">
+                    <p>Remember me</p>
+                    <input type="checkbox">
+                </div>
+                <div class="sign inputs">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--end of popup-->
+
+    <!--start header-->
+    <div class="header home-header">
+        <div class="container">
+            
+            <!--start navbar-->
+            <div class="navbar">
+                <div class="logo">
+                    <h3>scanX</h3>
+                </div>
+                <ul>
+                    <li class="active">
+                        <span class="fa-solid fa-house"></span>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <span class="fa-solid fa-shop"></span>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <span class="fa-solid fa-cart-shopping"></span>
+                        <a href="purchase.html">Purchase</a>
+                    </li>
+                    <li>
+                        <span class="fa-solid fa-message"></span>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                    <li id="login-icon" onclick="showPopUp()">
+                        <span class="fa-solid fa-user"></span>
+                        <a href="#popup">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!--end of navbar-->
+
+            <!--start header content-->
+            <div class="content">
+                <div class="left">
+                    <h1>Explore our range of fast, reliable and easy-to-use scanners                    
+
+                    </h1>
+                    <p>
+                        Streamline your image management and effortlessly scan high-resolution documents.
+                        Get powerful productivity and professional quality from our large format scanners
+
+                    </p>
+                </div>
+                <div class="right">
+                    <img src="./images/blob-haikei (3).svg" class="wave" alt="">
+                    <div class="cover">
+                        <img src="./images/scanner4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--end header content-->
+
+        </div>
+    </div>
+    <!--end of header-->
+
+    <!--start about-us-->
+    <div class="about-us section">
+        <div class="container">
+            <h1 class="title">
+                <span class="fa-solid fa-address-card"></span>
+                About-us
+            </h1>
+            <div class="about-us-container">
+                <p>
+                    We bring an unparalleled heritage and expertise to deliver imaging innovation across all areas of our lives, transforming how we work, learn and play in a connected world.
+                    We employ over 182,000 people in marketing and manufacturing facilities across Japan, the Americas, Europe, Asia and Oceania. Kyosei is our corporate philosophy and lies at the heart of our brand, business and sponsorship activities. Kyosei is a Japanese word that means living and working together for the common good – a principle that is embraced by all Canon employees. It shapes our mission and our values, the way we treat our people and conduct our business.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--end about-us-->
+    <!--start features-->
+    <div class="features section">
+        <div class="container">
+            <div class="features-container">
+                <h1 class="title">
+                    <span class="fa-solid fa-bolt"></span>
+                    Features
+                </h1>
+                <div class="list">
+                    <div class="1st">
+                        <span class="fa-solid fa-truck-fast"></span>
+                        <h3>fast delivery</h3>
+                        <p>
+                            all purchases are delivered within a week. 
+                        </p>
+                    </div>
+                    <div class="2nd">
+                        <span class="fa-solid fa-money-bill"></span>                        
+                        <h3>online payment</h3>
+                        <p>
+                            all types of payments are available.
+                        </p>
+                    </div>
+                    <div class="3rd">
+                        <span class="fa-solid fa-bag-shopping"></span>
+                        <h3>return purchases</h3>
+                        <p>
+                            all purchases can be returned and replaced within 5 days.
+                        </p>
+                    </div>
+                    <div class="4th">
+                        <span class="fa-solid fa-handshake"></span>
+                        <h3>customer service</h3>
+                        <p>
+                            we provide 24/7 support to customers before and after a purchase
+                        </p>
+                    </div>
+                    <div class="5th">
+                        <span class="fa-solid fa-ship"></span>
+                        <h3>shipping</h3>
+                        <p>
+                            shipping for all purchases that's up to $250 are free
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>    
+    <!--end of features-->
+    <!--start products-->
+    <div class="products section">
+        <div class="container">
+            <div class="products-container">
+                <h1 class="title">
+                    <span class="fa-solid fa-shop"></span>
+                    Products
+                </h1>
+                <!--1st product-->
+                <div class="product">
+                    <div class="product-img">
+                        <img src="./images/imageFORMULA_DR-M160II_1_tcm60-1155793.png" alt="">
+                    </div>
+                    <div class="product-desc">
+                        <h2>Image formula DR-M160II</h2>
+                        <p>The imageFORMULA DR-M160II is a productivity-boosting desktop scanner. With a robust design, fast speed and reliable media handling, it is ideal for paper-intensive scanning.
+
+                        </p>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="price">$299</h3>
+                        <div class="rating">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <a href="purchase.html">Purchase</a>
+                    </div>
+                </div>
+                <!--1st product-->
+                <!--2nd product-->
+                <div class="product">
+                    <div class="product-img">
+                        <img src="./images/imageFORMULA_DR6010C_2_tcm60-1075500.png" alt="">
+                    </div>
+                    <div class="product-desc">
+                        <h2>I-sensys X 1643P</h2>
+                        <p>Fast and reliable A4 black and white device offering versatile configuration for printing in multiple media types and sizes.</p>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="price">$499</h3>
+                        <div class="rating">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <a href="purchase.html">Purchase</a>
+                    </div>
+                </div>
+                <!--2nd product-->
+                <!--3th product-->
+                <div class="product">
+                    <div class="product-img">
+                        <img src="./images/imageFORMULA_DR-M160II_3_tcm60-1155791.png" alt="">
+                    </div>
+                    <div class="product-desc">
+                        <h2>Canon MAXIFY iB4140</h2>
+                        <p>A sleek A4 colour device that integrates seamlessly into your existing fleet, with connected hardware and software for secure collaboration from anywhere.</p>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="price">$799</h3>
+                        <div class="rating">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <a href="purchase.html">Purchase</a>
+                    </div>
+                </div>
+                <!--3th product-->
+
+            </div>
+        </div>
+    </div>
+    <!--end of products-->
+    <!--start review-->
+    <div class="reviews section">
+        <div class="container">
+            <h1 class="title">
+                <span class="fa-solid fa-comments"></span>
+                Customer reviews
+            </h1>
+
+            <div class="reviews-container">
+                <div class="review">
+                    <div class="avatar">
+                        <img src="./images/avatar2.jpg" alt="">
+                    </div>
+                    <div class="rating">
+                        <span class="fa-solid fa-star icon"></span>
+                        <span class="fa-solid fa-star icon"></span>
+                        <span class="fa-solid fa-star icon"></span>
+                        <span class="fa-solid fa-star icon"></span>
+                        <span class="fa-solid fa-star icon"></span>
+                    </div>
+                    <p class="comment">
+                        Great purchase! I bought the Canon MAXIFY iB4140 after I opened my law firm and realized I had so many papers I needed in PDF form and now business is running smoothly! I would gladly recommend doing business with scanX
+                    </p>
+                </div>
+                <div class="review">
+                    <div class="avatar">
+                        <img src="./images/avatar1.jpg" alt="">
+                    </div>
+                    <div class="rating">
+                        <span class="fa-solid fa-star icon"></span>
+                        <span class="fa-solid fa-star icon"></span>
+                        <span class="fa-solid fa-star icon"></span>
+                        <span class="fa-solid fa-star icon"></span>
+                        <span class="fa-regular fa-star"></span>
+                    </div>
+                    <p class="comment">
+                        I bought the Image Formula DR-C225 II for my art projects so that I can send them to clients but it arrived with a broken piece in it and they sent me a replacement within two days! scanX value their customers dearly.
+                    </p>
+                </div>
+                <div class="review">
+                    <div class="avatar">
+                        <img src="./images/avatar3.jpg" alt="">
+                    </div>
+                    <div class="rating">
+                        <span class="fa-solid fa-star icon"></span>
+                        <span class="fa-solid fa-star icon"></span>
+                        <span class="fa-solid fa-star icon"></span>
+                        <span class="fa-solid fa-star icon"></span>
+                        <span class="fa-regular fa-star"></span>
+                    </div>
+                    <p class="comment">
+                        I work in a sales office and we needed an upgrade for our scanner, so I ordered the i-SENSYS LBP623Cdw for the office and the scanner arrived within the time period they told me so our business was not postponed at all!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of review-->
+    <!--start footer-->
+    <div class="footer section">
+        <div class="container">
+            <div class="footer-container">
+                <div class="logo">
+                    <h2>scanX</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="purchase.html">Purchase</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <span class="fa-brands fa-twitter"></span>
+                    <span class="fa-brands fa-facebook-f"></span>
+                    <span class="fa-brands fa-instagram"></span>
+                    <span class="fa-brands fa-whatsapp"></span>
+                </div>
+                <div class="authors">
+                    <h5>Made by: Hammad Ali & Mohammad Adnan</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of footer-->
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

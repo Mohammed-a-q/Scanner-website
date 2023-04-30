@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Scanners online store" />
+    <meta name="keywords" content="scanners, offices, store" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Feedback</title>
+</head>
+<body>
+    <!--start header-->
+    <div class="header">
+        <div class="container">
+            
+            <!--start navbar-->
+            <div class="navbar">
+                <div class="logo">
+                    <h3>scanX</h3>
+                </div>
+                <ul>
+                    <li class="">
+                        <span class="fa-solid fa-house"></span>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <span class="fa-solid fa-shop"></span>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <span class="fa-solid fa-cart-shopping"></span>
+                        <a href="purchase.html">Purchase</a>
+                    </li>
+                    <li class="active">
+                        <span class="fa-solid fa-message"></span>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+            <!--end of navbar-->
+
+        </div>
+    </div>
+    <!--end of header-->
+
+    <!--start feedback-->
+    <div class="feedback">
+
+        <div class="container">
+            <div class="feedback-container">
+                <div class="cover"></div>
+
+                <form class="feedback-form" onsubmit="return feedbackValidate()" id="form">
+                    <!--start errors-->
+                    <div id="errors-box" class="f-errors">
+                        
+                    </div>
+                    <!--end of errors-->
+                    <input type="text" onkeyup="nameValidate()" class="f-input input name-input" placeholder="Name" id="name">
+                    <div id="name-error">
+
+                    </div>
+                    <input type="text" class="f-input input" placeholder="Email address">
+
+                    <input type="text" class="f-input input" placeholder="Phone number">
+    
+                    <input id="subject" class="f-input input" type="text" placeholder="Subject">
+    
+                    <select id="select" class="f-input">
+                        <option selected>Suggestion</option>
+                        <option>Complaint</option>
+                        <option>Idea</option>
+                        <option>Help</option>
+                    </select>
+    
+                    <textarea class="f-input message input"></textarea>
+    
+                    <input type="submit" class="submit-btn"  value="send">
+    
+                </form>
+    
+                <div class="description">
+                    <h1 class="feedback-title">FEEDBACK</h1>
+                    <p class="feedback-desc">
+                        we at scanX greatly value the feedback of our clients and use it to improve our services, from customer service to delivery, we would wholeheartedly like to hear your opinion on the services presented to you by us in order for us to evolve our accommodations. please fill out the form on this page and we will do our best to make your experince unique.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end of feedback-->
+
+    <!--start footer-->
+    <div class="footer no-margin-footer section">
+        <div class="container">
+            <div class="footer-container">
+                <div class="logo">
+                    <h2>scanX</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="purchase.html">Purchase</a></li>
+                        <li><a href="feedback.html" class="active">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <span class="fa-brands fa-twitter"></span>
+                    <span class="fa-brands fa-facebook-f"></span>
+                    <span class="fa-brands fa-instagram"></span>
+                    <span class="fa-brands fa-whatsapp"></span>
+                </div>
+                <div class="authors">
+                    <h5>Made by: Hammad Ali & Mohammad Adnan</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of footer-->
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
